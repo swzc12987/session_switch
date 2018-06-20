@@ -1,0 +1,53 @@
+server:
+  port: 8081
+  # context-path: /os
+  
+spring:
+  profiles:
+    active: dev
+  # jpa
+  jpa:
+    hibernate:
+      # 逆向工程
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: MYSQL
+    show-sql: true
+  # 缓存配置
+  cache:
+    ehcache:
+      # 默认从classpath下查找
+      config: ehcache.xml
+  # redis配置（自定义配置，详见redisConfig）
+  redis:
+    host-name: localhost
+    port: 6379
+    timeout: 10000
+    pool:
+      max-idle: 10
+      min-idle: 5
+      max-total: 5
+      max-wait-millis: 10001
+  # http设置
+  http:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 50MB 
+      
+# security 相关配置
+security:
+  basic:
+    enabled:  false
+
+
+
+
+
+
+
+
+
+
+
+
+
