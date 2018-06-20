@@ -34,11 +34,11 @@ springBoot 1.5.10.RELEASE + JDK1.8 + swagger
 #### 安装教程
 
 1. 需要jdk1.8环境
-2. jar包已经打包在根目录下的jar文件夹下
+2. 需要安装eclipse或者安装并配置maven
 
 #### 使用说明
 
-1. 在根目录下jar文件夹找到jar包
+1. 分别进入session_switch_client/session_switch_server目录, 打开cmd窗口, 执行命令mvn install
 2. 在cmd窗口下依次执行
 	- java -jar session_switch_server-0.0.1-SNAPSHOT.jar
 	- java -jar session_switch_client-0.0.1-SNAPSHOT.jar
