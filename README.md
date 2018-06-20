@@ -43,6 +43,9 @@ springBoot 1.5.10.RELEASE + JDK1.8 + swagger
 3. 在cmd窗口下依次执行
 	- java -jar session_switch_server-0.0.1-SNAPSHOT.jar
 	- java -jar session_switch_client-0.0.1-SNAPSHOT.jar
+
+- 注此处也可以通过分别进入两个项目, 启动com.ericsson.App文件中的main方法
+
 4. 访问客户端端口 http://localhost:8082/swagger-ui.html
 5. 打开会话相关接口 -> /nbi/deliverysession -> Parameters 在dto 窗口中填入开启参数
 	```
