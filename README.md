@@ -39,11 +39,12 @@ springBoot 1.5.10.RELEASE + JDK1.8 + swagger
 #### 使用说明
 
 1. 分别进入session_switch_client/session_switch_server目录, 打开cmd窗口, 执行命令mvn install
-2. 在cmd窗口下依次执行
+2. 分别进入目录中的target目录
+3. 在cmd窗口下依次执行
 	- java -jar session_switch_server-0.0.1-SNAPSHOT.jar
 	- java -jar session_switch_client-0.0.1-SNAPSHOT.jar
-3. 访问客户端端口 http://localhost:8082/swagger-ui.html
-4. 打开会话相关接口 -> /nbi/deliverysession -> Parameters 在dto 窗口中填入开启参数
+4. 访问客户端端口 http://localhost:8082/swagger-ui.html
+5. 打开会话相关接口 -> /nbi/deliverysession -> Parameters 在dto 窗口中填入开启参数
 	```
 	{
 	  "actionType": "Start",
@@ -68,11 +69,11 @@ springBoot 1.5.10.RELEASE + JDK1.8 + swagger
 }
 ```
 ![image](other/1.png)
-5. 在id输入栏填入123456789
-6. 点击Try it out! 进行测试
-7. Try it out! 下方显示的Response Code: 200 表示测试通过, 并在Response Body中返回相关信息
+6. 在id输入栏填入123456789
+7. 点击Try it out! 进行测试
+8. Try it out! 下方显示的Response Code: 200 表示测试通过, 并在Response Body中返回相关信息
 ![image](other/2.png)
-8. 访问成功jar包相对路径下产生相应log文件
+9. 访问成功jar包相对路径下产生相应log文件
 ![image](other/3.png)
 
 
